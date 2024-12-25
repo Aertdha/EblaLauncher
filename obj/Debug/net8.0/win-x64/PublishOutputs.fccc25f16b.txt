@@ -1,0 +1,4 @@
+C:\Users\admin\Desktop\mine\EblaLauncher\obj\Host\bin\electron.manifest.json
+C:\Users\admin\Desktop\mine\EblaLauncher\obj\Host\bin\package-lock.json
+C:\Users\admin\Desktop\mine\EblaLauncher\obj\Host\bin\EblaLauncher.pdb
+C:\Users\admin\Desktop\mine\EblaLauncher\obj\Host\bin\EblaLauncher.exe

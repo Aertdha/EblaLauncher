@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.EblaLauncher.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.EblaLauncher.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.build.EblaLauncher.props",
+      "PackagePath": "build\\EblaLauncher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.buildMultiTargeting.EblaLauncher.props",
+      "PackagePath": "buildMultiTargeting\\EblaLauncher.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\win-x64\\staticwebassets\\msbuild.buildTransitive.EblaLauncher.props",
+      "PackagePath": "buildTransitive\\EblaLauncher.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

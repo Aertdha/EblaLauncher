@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "TvefgSiN+iQOMnQ6xO7ZuFBwQZ+FpzZ0a7eHqzrXmWE=",
+  "Source": "EblaLauncher",
+  "BasePath": "_content/EblaLauncher",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EblaLauncher\\wwwroot",
+      "Source": "EblaLauncher",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\",
+      "BasePath": "_content/EblaLauncher",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\aubn6j49l3-5l2wkh33fe.gz",
+      "SourceId": "EblaLauncher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/EblaLauncher",
+      "RelativePath": "js/main#[.{fingerprint=5l2wkh33fe}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bxom4mukmh",
+      "Integrity": "UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
+      "SourceId": "EblaLauncher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\",
+      "BasePath": "_content/EblaLauncher",
+      "RelativePath": "js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5l2wkh33fe",
+      "Integrity": "GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "js/main.5l2wkh33fe.js",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\aubn6j49l3-5l2wkh33fe.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.007299270073"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5l2wkh33fe"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.5l2wkh33fe.js",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5l2wkh33fe"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.5l2wkh33fe.js.gz",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\aubn6j49l3-5l2wkh33fe.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5l2wkh33fe"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\aubn6j49l3-5l2wkh33fe.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.007299270073"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GT0LMY+B9WRwwdLKZo5maVnheRwFbXEq6YucgKSzDW0="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js.gz",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\aubn6j49l3-5l2wkh33fe.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UVwUBdSMnVSZYuAPOO5W6Uri2uZXzbxVimothlVQIsQ="
+        }
+      ]
+    }
+  ]
+}
