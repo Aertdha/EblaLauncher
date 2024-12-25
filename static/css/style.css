@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#app {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#games-list {
+    margin-top: 20px;
+} 
