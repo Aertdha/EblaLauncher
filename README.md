@@ -4,16 +4,17 @@
 
 ## 🚀 Технологии
 
-- Backend: Python/Flask
+- Backend: C# (.NET 7+)
 - Frontend: HTML, CSS, JavaScript
-- Desktop: Electron
+- Desktop: Electron.NET
 - Database: SQLite (planned)
 
 ## 📋 Требования
 
-- Python 3.8+
+- .NET SDK 7.0+
 - Node.js 16+
 - npm 8+
+- ElectronNET.CLI (глобально)
 
 ## 🛠 Установка
 
@@ -21,18 +22,11 @@
    git clone https://github.com/Aertdha/EblaLauncher.git
    cd EblaLauncher
 
-2. Настройте Python окружение:
-   python -m venv venv
+2. Установите глобальные зависимости:
+   dotnet tool install ElectronNET.CLI -g
 
-   # Windows
-   .\venv\Scripts\activate
-
-   # Linux/MacOS
-   source venv/bin/activate
-
-   pip install -r requirements.txt
-
-3. Установите Node.js зависимости:
+3. Восстановите зависимости проекта:
+   dotnet restore
    npm install
 
 ## 🚦 Запуск
