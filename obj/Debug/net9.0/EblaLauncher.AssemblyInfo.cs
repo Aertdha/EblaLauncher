@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EblaLauncher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88ae46e227264bd3a2b9db76f048016365d5a168")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f02dc75293ef4eaa6f4cbe7c139dcc1b7a1ef1bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("EblaLauncher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EblaLauncher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

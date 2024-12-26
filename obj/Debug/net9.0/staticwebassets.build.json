@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TvefgSiN+iQOMnQ6xO7ZuFBwQZ+FpzZ0a7eHqzrXmWE=",
+  "Hash": "2b9FV/jPktaItybh2PdRU4MnxKcxcmy4Sxyvti4QQWo=",
   "Source": "EblaLauncher",
   "BasePath": "_content/EblaLauncher",
   "Mode": "Default",
@@ -38,6 +38,48 @@
       "OriginalItemSpec": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js"
     },
     {
+      "Identity": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\qi42y9t8u7-atvhzk15ao.gz",
+      "SourceId": "EblaLauncher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/EblaLauncher",
+      "RelativePath": "css/markdown#[.{fingerprint=atvhzk15ao}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\css\\markdown.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ixtz0rgx7g",
+      "Integrity": "uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\css\\markdown.css"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\css\\markdown.css",
+      "SourceId": "EblaLauncher",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\",
+      "BasePath": "_content/EblaLauncher",
+      "RelativePath": "css/markdown#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "atvhzk15ao",
+      "Integrity": "siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\markdown.css"
+    },
+    {
       "Identity": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
       "SourceId": "EblaLauncher",
       "SourceType": "Discovered",
@@ -60,6 +102,304 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/markdown.atvhzk15ao.css",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\qi42y9t8u7-atvhzk15ao.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001904761905"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 12:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "atvhzk15ao"
+        },
+        {
+          "Name": "label",
+          "Value": "css/markdown.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4="
+        }
+      ]
+    },
+    {
+      "Route": "css/markdown.atvhzk15ao.css",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\css\\markdown.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 12:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "atvhzk15ao"
+        },
+        {
+          "Name": "label",
+          "Value": "css/markdown.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4="
+        }
+      ]
+    },
+    {
+      "Route": "css/markdown.atvhzk15ao.css.gz",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\qi42y9t8u7-atvhzk15ao.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 12:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "atvhzk15ao"
+        },
+        {
+          "Name": "label",
+          "Value": "css/markdown.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8="
+        }
+      ]
+    },
+    {
+      "Route": "css/markdown.css",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\qi42y9t8u7-atvhzk15ao.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001904761905"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 12:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4="
+        }
+      ]
+    },
+    {
+      "Route": "css/markdown.css",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\css\\markdown.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 12:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4="
+        }
+      ]
+    },
+    {
+      "Route": "css/markdown.css.gz",
+      "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\qi42y9t8u7-atvhzk15ao.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 12:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvHI5Xud1BLqaPCt1jDoTbVbjVv2M++SK1nbR95sPa8="
+        }
+      ]
+    },
     {
       "Route": "js/main.5l2wkh33fe.js",
       "AssetFile": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\obj\\Debug\\net9.0\\compressed\\aubn6j49l3-5l2wkh33fe.gz",

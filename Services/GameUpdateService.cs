@@ -3,6 +3,7 @@ using EblaLauncher.Models;
 
 namespace EblaLauncher.Services
 {
+    // Интерфейс сервиса обновления игр
     public interface IGameUpdateService
     {
         Task<List<GameInfo>> CheckForUpdates();
@@ -10,6 +11,7 @@ namespace EblaLauncher.Services
         Task StartUpdateLoop(CancellationToken cancellationToken);
     }
 
+    // Сервис для проверки и загрузки обновлений игр
     public class GameUpdateService : IGameUpdateService
     {
         private readonly HttpClient _httpClient;
@@ -23,6 +25,7 @@ namespace EblaLauncher.Services
                 ?? throw new ArgumentNullException("UpdateService:ApiUrl not configured");
         }
 
+        // Проверяет наличие обновлений игр с момента последней проверки
         public async Task<List<GameInfo>> CheckForUpdates()
         {
             try
@@ -40,6 +43,7 @@ namespace EblaLauncher.Services
             }
         }
 
+        // Загружает файл обновления по его идентификатору
         public async Task<Stream> DownloadFile(string fileId)
         {
             var response = await _httpClient.GetAsync($"{_apiUrl}/download/{fileId}");
@@ -47,6 +51,7 @@ namespace EblaLauncher.Services
             return await response.Content.ReadAsStreamAsync();
         }
 
+        // Запускает бесконечный цикл проверки обновлений
         public async Task StartUpdateLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -64,4 +69,4 @@ namespace EblaLauncher.Services
             }
         }
     }
-} 
+}

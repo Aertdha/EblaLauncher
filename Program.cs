@@ -4,10 +4,28 @@ using EblaLauncher.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseElectron(args);
+
+// Регистрация базовых сервисов
+builder.Services.AddMemoryCache();
+builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
+
+// Регистрация сервисов приложения
 builder.Services.AddScoped<IGameInstaller, GameInstaller>();
+builder.Services.AddScoped<IDiscordAuthService, DiscordAuthService>();
+builder.Services.AddSingleton<IUserDataService, UserDataService>();
+builder.Services.AddSingleton<IEncryptionService, EncryptionService>();
 
 var app = builder.Build();
+
+// Настройка CSP для безопасности приложения
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Append(
+        "Content-Security-Policy",
+        "default-src 'self' https://discord.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'");
+    await next();
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -19,21 +37,7 @@ app.MapControllerRoute(
 
 if (HybridSupport.IsElectronActive)
 {
-    Console.WriteLine("Electron is active, creating window...");
-    await Task.Run(CreateElectronWindow);
-}
-else
-{
-    Console.WriteLine("Electron is not active!");
-}
-
-app.Run();
-
-async Task CreateElectronWindow()
-{
-    try 
-    {
-        Console.WriteLine("Creating browser window...");
+    await Task.Run(async () => {
         var browserWindow = await Electron.WindowManager.CreateWindowAsync(new BrowserWindowOptions
         {
             Width = 1200,
@@ -43,42 +47,27 @@ async Task CreateElectronWindow()
             WebPreferences = new WebPreferences
             {
                 NodeIntegration = true,
-                ContextIsolation = false
+                ContextIsolation = false,
+                WebSecurity = true,
+                AllowRunningInsecureContent = false
             },
             Title = "EblaLauncher"
         });
 
-        Console.WriteLine("Window created, setting up handlers...");
+        browserWindow.OnReadyToShow += () => browserWindow.Show();
 
-        browserWindow.OnReadyToShow += () => {
-            Console.WriteLine("Window is ready to show");
-            browserWindow.Show();
-        };
-
-        Electron.IpcMain.On("minimize", (args) => {
-            browserWindow.Minimize();
-        });
-
+        // Обработка IPC сообщений управления окном
+        Electron.IpcMain.On("minimize", (args) => browserWindow.Minimize());
         Electron.IpcMain.On("maximize", async (args) => {
             if (await browserWindow.IsMaximizedAsync())
                 browserWindow.Restore();
             else
                 browserWindow.Maximize();
         });
+        Electron.IpcMain.On("close", (args) => browserWindow.Close());
 
-        Electron.IpcMain.On("close", (args) => {
-            browserWindow.Close();
-        });
+        browserWindow.OnClosed += () => Electron.App.Quit();
+    });
+}
 
-        browserWindow.OnClosed += () => {
-            Electron.App.Quit();
-        };
-
-        Console.WriteLine("Window setup complete");
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Error creating window: {ex.Message}");
-        Console.WriteLine(ex.StackTrace);
-    }
-} 
+app.Run(); 

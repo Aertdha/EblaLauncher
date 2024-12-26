@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/EblaLauncher/css/markdown.atvhzk15ao.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\markdown.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"atvhzk15ao"},{"Name":"integrity","Value":"sha256-siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4="},{"Name":"label","Value":"_content/EblaLauncher/css/markdown.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1108"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Dec 2024 12:23:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EblaLauncher/css/markdown.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\markdown.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1108"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022siH94eKc0byhG8swyTqtm0DghxHuuhdguvSlF0wlUL4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Dec 2024 12:23:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EblaLauncher/js/main.5l2wkh33fe.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\main.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -2,9 +2,12 @@ using Google.Apis.Drive.v3;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using EblaLauncher.Models;
+using Microsoft.Extensions.Caching.Memory;
+using System.Text.Json;
 
 namespace EblaLauncher.Services
 {
+    /// Сервис для взаимодействия с Google Drive API, обеспечивающий функционал обновления игр
     public interface IGoogleDriveService
     {
         Task<List<GameInfo>> CheckForUpdates();
@@ -16,49 +19,55 @@ namespace EblaLauncher.Services
     {
         private readonly DriveService _driveService;
         private readonly string _updatesFolderId;
+        private readonly IMemoryCache _cache;
         private DateTime _lastCheck = DateTime.MinValue;
         
-        public GoogleDriveService(IConfiguration configuration)
+        public GoogleDriveService(IConfiguration configuration, IMemoryCache cache)
         {
-            // Инициализация Google Drive API
+            _cache = cache;
             var credential = GoogleCredential.FromFile("credentials.json")
                 .CreateScoped(DriveService.ScopeConstants.DriveReadonly);
 
             _driveService = new DriveService(new BaseClientService.Initializer
             {
-                HttpClientInitializer = credential
+                HttpClientInitializer = credential,
+                ApplicationName = "EblaLauncher"
             });
 
             _updatesFolderId = configuration["GoogleDrive:UpdatesFolderId"] 
-                ?? throw new ArgumentNullException(
-                    nameof(configuration), 
-                    "GoogleDrive:UpdatesFolderId is not configured");
+                ?? throw new ArgumentNullException(nameof(configuration));
         }
 
+        /// Выполняет проверку обновлений игр в указанной директории Google Drive,
+        /// анализируя файлы update.json, измененные после последней проверки
         public async Task<List<GameInfo>> CheckForUpdates()
         {
-            var updates = new List<GameInfo>();
+            const string cacheKey = "game_updates";
             
+            if (_cache.TryGetValue(cacheKey, out List<GameInfo>? cachedUpdates))
+            {
+                return cachedUpdates ?? new List<GameInfo>();
+            }
+
+            var updates = new List<GameInfo>();
             try
             {
                 var request = _driveService.Files.List();
-                request.Q = $"'{_updatesFolderId}' in parents and name = 'update.json' and modifiedTime > '{_lastCheck:yyyy-MM-ddTHH:mm:ssZ}'";
-                
+                request.Q = $"'{_updatesFolderId}' in parents and name = 'update.json'";
+                request.Fields = "files(id,name,modifiedTime)";
+
                 var files = await request.ExecuteAsync();
-                
                 foreach (var file in files.Files)
                 {
                     using var stream = await DownloadFile(file.Id);
-                    using var reader = new StreamReader(stream);
-                    var json = await reader.ReadToEndAsync();
-                    var gameInfo = System.Text.Json.JsonSerializer.Deserialize<GameInfo>(json);
-                    
+                    var gameInfo = await JsonSerializer.DeserializeAsync<GameInfo>(stream);
                     if (gameInfo != null)
                     {
                         updates.Add(gameInfo);
                     }
                 }
 
+                _cache.Set(cacheKey, updates, TimeSpan.FromMinutes(5));
                 _lastCheck = DateTime.UtcNow;
             }
             catch (Exception ex)
@@ -69,6 +78,8 @@ namespace EblaLauncher.Services
             return updates;
         }
 
+        /// Загружает файл из Google Drive по указанному идентификатору
+        /// и возвращает его в виде потока данных
         public async Task<Stream> DownloadFile(string fileId)
         {
             var request = _driveService.Files.Get(fileId);
@@ -78,6 +89,8 @@ namespace EblaLauncher.Services
             return stream;
         }
 
+        /// Запускает бесконечный цикл проверки обновлений с 5-минутным интервалом.
+        /// Цикл может быть прерван через cancellationToken
         public async Task StartUpdateLoop(CancellationToken cancellationToken)
         {
             while (!cancellationToken.IsCancellationRequested)
@@ -85,11 +98,9 @@ namespace EblaLauncher.Services
                 var updates = await CheckForUpdates();
                 if (updates.Any())
                 {
-                    // Уведомляем систему о новых играх
                     foreach (var game in updates)
                     {
                         Console.WriteLine($"New game found: {game.Name}");
-                        // TODO: Добавить в базу/уведомить UI
                     }
                 }
 
@@ -97,4 +108,4 @@ namespace EblaLauncher.Services
             }
         }
     }
-} 
+}

@@ -46,3 +46,14 @@ C:\Users\admin\Desktop\mine\EblaLauncher\obj\Debug\net9.0\refint\EblaLauncher.dl
 C:\Users\admin\Desktop\mine\EblaLauncher\obj\Debug\net9.0\EblaLauncher.pdb
 C:\Users\admin\Desktop\mine\EblaLauncher\obj\Debug\net9.0\EblaLauncher.genruntimeconfig.cache
 C:\Users\admin\Desktop\mine\EblaLauncher\obj\Debug\net9.0\ref\EblaLauncher.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\appsettings.json
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\Examples\update.json
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\Google.Apis.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\Google.Apis.Auth.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\Google.Apis.Core.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\Google.Apis.Drive.v3.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\System.Management.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\bin\Debug\net9.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\admin\Desktop\mine\EblaLauncher\obj\Debug\net9.0\compressed\qi42y9t8u7-atvhzk15ao.gz

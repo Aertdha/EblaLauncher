@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\css\\markdown.css",
+      "PackagePath": "staticwebassets\\css\\markdown.css"
+    },
+    {
       "Id": "C:\\Users\\admin\\Desktop\\mine\\EblaLauncher\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },

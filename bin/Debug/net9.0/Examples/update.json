@@ -1,0 +1,20 @@
+{
+  "id": "doom-2016",
+  "name": "DOOM (2016)",
+  "description": "DOOM возвращается в виде жестокого, кровавого шутера от первого лица. Безжалостные демоны, невероятное оружие и стремительное движение обеспечивают напряженную кампанию от первого лица.",
+  "imageUrl": "https://drive.google.com/uc?id=your-image-id",
+  "torrentUrl": "https://drive.google.com/uc?id=your-torrent-id",
+  "steamFixUrl": "https://drive.google.com/uc?id=your-steamfix-id",
+  "version": "1.0.0",
+  "added": "2024-03-25T12:00:00Z",
+  "size": 68719476736,
+  "requirements": {
+    "os": "Windows 7/8.1/10 (64-bit)",
+    "processor": "Intel Core i5-2400/AMD FX-8320",
+    "memory": "8 GB RAM",
+    "graphics": "NVIDIA GTX 670 2GB/AMD Radeon HD 7870 2GB",
+    "storage": "64 GB"
+  },
+  "steamAppId": "379720",
+  "requiresSteamEmulator": true
+} 
